@@ -1,17 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Coordenadas
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="ion-padding" style="text-align:center">
+      <ion-title size="large">Coordenadas</ion-title>
+    </div>
+     <div class="ion-padding">
+      <ion-item>
+      <ion-label>Latitud:{{latitud}}</ion-label>
+    </ion-item>
+     </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+     <div class="ion-padding">
+<ion-item>
+      <ion-label>Longitud:{{longitud}}</ion-label>
+    </ion-item>
+     </div>
+
+     <div class="ion-padding">
+
+      <ion-button expand="full" (click)="obtenerCoordenadas()">obtenerCoordenadas</ion-button>
+     </div>
+    
+ 
 </ion-content>
